@@ -313,11 +313,14 @@ article .entry table th {
 article .entry blockquote {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  font-style: italic;
   font-family: "Georgia", serif;
-  font-size: 1.2em;
-  padding: 0 30px 15px;
-  text-align: center;
+  font-size: 1em;
+  padding: 0 30px 15px 10px;
+}
+article .entry blockquote p {
+  border-left: 3px solid #ddd;
+  padding-left: 10px;
+  margin: 15px 0;
 }
 article .entry blockquote footer {
   border-top: none;
