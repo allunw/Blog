@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://allunw.github.io/"/>
-  <updated>2017-12-14T06:45:14.046Z</updated>
+  <updated>2017-12-15T04:15:06.774Z</updated>
   <id>https://allunw.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>什么是同构JavaScript 应用？(转)</title>
+    <title>什么是同构JavaScript 应用？</title>
     <link href="https://allunw.github.io/2015/11/07/isomorphism-javascript-application/"/>
     <id>https://allunw.github.io/2015/11/07/isomorphism-javascript-application/</id>
     <published>2015-11-07T14:35:55.000Z</published>
-    <updated>2017-12-14T06:45:14.046Z</updated>
+    <updated>2017-12-15T04:15:06.774Z</updated>
     
     <content type="html"><![CDATA[<h3 id="什么是同构？"><a href="#什么是同构？" class="headerlink" title="什么是同构？"></a>什么是同构？</h3><p>“Write once, run everywhere”这是一句形容Java的语句。现在Nodejs出来后Javascript也可以用这句话来描述了。这就引出了同构JavaScript应用的概念：一份代码同时在客户端和服务端渲染的JavaScript应用。</p><h3 id="单页应用的问题"><a href="#单页应用的问题" class="headerlink" title="单页应用的问题"></a>单页应用的问题</h3><p>同构JavaScript应用一直以来就是人们追寻的目标，单页应用是其中之一。单页拥有良好的交互体验，却带来一些其他问题： SEO和性能。</p><ol><li>SEO可以说是单页应用的硬伤，这导致很多需要搜索引擎的页面不能体验到单页的良好交互体验。</li><li>同时首屏性能也是单页的一个瓶颈，有些需要高性能首屏展示的网站也只能与单页应用插件而过。</li></ol><p>根本原因我们可以看到是JavaScript只在客户端运行，而服务端生成出来客户能看到的内容。</p><h3 id="传统解决方案"><a href="#传统解决方案" class="headerlink" title="传统解决方案"></a>传统解决方案</h3><p>之前为了解决单页这样的问题我们通常有三种做法：</p><ol><li>利用服务端语言重写一套供搜索引擎索引的页面;</li><li>利用服务端语言将首屏渲染出来给到客户端;</li><li>写一个JavaScript解析器来解析客户端的脚本语言（例如服务端嵌入v8）;</li></ol><p>从这里看，前两种属于代码重复率高的方案，而第三种却牺牲了部分性能来达到目的。是否有其他方案呢？当然有，这就是本文的概念：同构。</p><h3 id="同构JavaScript应用来解决单页问题"><a href="#同构JavaScript应用来解决单页问题" class="headerlink" title="同构JavaScript应用来解决单页问题"></a>同构JavaScript应用来解决单页问题</h3><p>同构 JavaScript 应用基于 JavaScript 编写，可以在客户端和服务端运行。正因为此，你只需要写一次代码，就可以在服务端渲染静态页面，还可以在客户端完成复杂的交互。这样就解决了上面两个问题。</p><p>这里我觉得，Nodejs才是同构的关键。我们来看看现在的一些应用:</p><p>当前流行的模板引擎React.js, Handlebars, jade，这些我们完全可以nodejs和前端单页用同一套。</p><p>JavaScript框架Rendr,Meteor, underscore等。</p><p>同构的目标：一码多地运行，更少的代码，更优的方案。</p>]]></content>
     
